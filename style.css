@@ -1,0 +1,9 @@
+.row {
+  /* adding spacing between rows */
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.userinput {
+  /* pull responses to left so it looks better */
+  padding-left: 0px;
+}
