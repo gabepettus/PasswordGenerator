@@ -28,5 +28,24 @@ input {
 }
 
 #output {
-   white-space: pre;
+   /* white-space: pre; */
+}
+
+.text-align {
+  text-align: right !important; 
+}
+
+/* Width at 768px and below */
+@media screen and (max-width: 768px) {
+
+  .text-align {
+    text-align: left !important; 
+  }
+
+  input {
+    width: 100px;
+  }
+  #sidebar {
+    margin-top: 40px;
+  }
 }
