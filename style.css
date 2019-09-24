@@ -26,3 +26,7 @@ input {
   /* margin: 1px; */
   border: solid;
 }
+
+#output {
+   white-space: pre;
+}
