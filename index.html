@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     
-    <title>Document</title>
+    <title>Gabes Password Generator</title>
   </head>
   <body>
     <H1>Password Generator</H1>
@@ -16,9 +16,14 @@
       using a gird to ensure that they line up nicely -->
       <div class="row">
         <!-- 6 row to take half the scree -->
-        <div class="col-sm-6 side">
+        <div class="col-sm-6 side-section">
           <!-- start input section -->
           <div id="container-fluid">
+            <div class="row">
+              <div class="col-sm-8 text-align center">
+                <h4>Specify Criteria</h4>
+              </div>
+            </div>
             <div class="row">
               <div class="col-sm-8 text-align criteria">
                 Min length:
@@ -68,14 +73,14 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-sm-12">
+              <div class="col-sm-12" center>
                 <button onclick="passwordGenerator()" class="center">Generate Password</button>
               </div>
             </div>
           </div>
         </div>
         <!-- right side of screen for output -->
-        <div class="col-sm-6">
+        <div class="col-sm-6 side-section">
           <h4 id="output-title"> Generated Password </h4>
           <p id="output"></p>
         </div>
