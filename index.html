@@ -11,7 +11,7 @@
   </head>
   <body>
     <H1>Password Generator</H1>
-    <div class="container-fluid">
+    <div class="container-fluid" >
       <!-- first row contains the list of input
       using a gird to ensure that they line up nicely -->
       <div class="row">
@@ -20,7 +20,7 @@
           <!-- start input section -->
           <div id="container-fluid">
             <div class="row">
-              <div class="col-sm-8 text-align center">
+              <div class="col-sm-12 text-align center">
                 <h4>Specify Criteria</h4>
               </div>
             </div>
@@ -29,7 +29,7 @@
                 Min length:
               </div>
               <div class="col-sm-4 userinput">
-                <input type="number" id="minLength" name="minLength" required> </input>
+                <input type="number" id="minLength" name="minLength" size=6 required> </input>
               </div>
             </div>
             <div class="row">
@@ -37,7 +37,7 @@
                 Max length:
               </div>
               <div class="col-sm-4 userinput">
-                <input type="number" id="maxLength" name="maxLength" required> </input>
+                <input type="number" id="maxLength" name="maxLength"  required> </input>
               </div>
             </div>
             <div class="row">
@@ -72,21 +72,30 @@
                 <input class="div-check-input" type="checkbox" value="" id="upperCase">
               </div>
             </div>
+          </div>
             <div class="row">
-              <div class="col-sm-12" center>
+              <div class="col-sm-12 text-align center">
                 <button onclick="passwordGenerator()" class="center">Generate Password</button>
               </div>
             </div>
-          </div>
         </div>
         <!-- right side of screen for output -->
         <div class="col-sm-6 side-section">
-          <h4 id="output-title"> Generated Password </h4>
-          <p id="output"></p>
+          <div class="row">
+            <div class="col-sm-12">
+              <h4 id="output-title"> Generated Password </h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <p id="output"></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
+    <!-- should be moved to js file -->
     <script type="text/javascript">
 
     function passwordGenerator() {
@@ -204,6 +213,7 @@
           // concate new random char to newPassword string
           newPassword += possibleChars.charAt(Math.floor(Math.random() * possibleChars.length));
         }
+        // TODO figure out how to justify text will look better
         outputDOM.textContent = newPassword;
       }
     }

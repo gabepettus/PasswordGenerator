@@ -1,14 +1,33 @@
-h1,h4 {
-  text-align: center;
+body {
+  /* image for background */
+  background-image: url('./images/low_contrast_linen.png');
+
+  /* font parameters */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+
+  /* added padding to prevent navbar overlap. (100 based on browser inpector of size) */
+  padding-top: 90px;
 }
 
-input {
-  width: 100%;
+.container-fluid {
+  padding-left: 5%;
+  padding-right: 5%;
 }
+
+h1,h4 {
+  text-align: center;
+  background-color: #48AAD4 
+}
+
 .row {
   /* adding spacing between rows */
   padding-top: 3px;
   padding-bottom: 3px;
+}
+
+input {
+ width: 6em;
 }
 .userinput {
   /* pull responses to left so it looks better */
@@ -22,8 +41,7 @@ input {
 }
 
 .side-section {
-  /* background-color: #FFD4E4; */
-  /* margin: 1px; */
+  background-color: #AAD4A3;
   border: solid;
 }
 
