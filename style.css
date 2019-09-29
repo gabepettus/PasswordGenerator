@@ -27,7 +27,7 @@ h1,h4 {
 }
 
 input {
- width: 6em;
+ width: 100%;
 }
 
 .userinput {
@@ -52,6 +52,8 @@ input {
   word-wrap: break-word;
   border: dashed grey;
   width: 100%;
+  background-color: lightgrey;
+  height: 100%;
 }
 
 .text-align {
