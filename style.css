@@ -29,6 +29,7 @@ h1,h4 {
 input {
  width: 6em;
 }
+
 .userinput {
   /* pull responses to left so it looks better */
   padding-left: 0px;
@@ -49,6 +50,8 @@ input {
   text-align: left;
   padding-top: 5%;
   word-wrap: break-word;
+  border: dashed grey;
+  width: 100%;
 }
 
 .text-align {
